@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latex-resume-builder"
+version = "0.1.0"
+description = "Generate editable LaTeX resumes from project/docs evidence"
+requires-python = ">=3.9"
+
+[project.scripts]
+resume-builder = "resume_builder.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resume_builder*"]
